@@ -1,0 +1,357 @@
+/*body{
+	background-color: grey;
+}*/
+h1{
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+header{
+	height: 650px;
+	width: 100%;
+
+	background-image: url("images/desktop/image-hero.jpg") ;
+}
+nav{
+	padding-top:  50px;
+	display: flex;
+	justify-content: space-between;
+}
+.hamburger{
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+.NavLinks{
+	display: flex;
+	list-style: none;
+	color: white;
+
+}
+.NavLinks li{
+	font-family: 'Alata', sans-serif;
+	margin-left: 30px;
+	padding-bottom: 5px;
+	transition: border-bottom 0.1s, padding-bottom 0.1s
+	
+
+}
+.NavLinks li:hover{
+	border-bottom: 2px solid white;
+	padding-bottom: 3px;
+	cursor: pointer;
+}
+.HeaderTitle{
+	margin-top: 9vw;
+	width: 50vw;
+	font-size: 5vw;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	padding-left: 5%;
+	border: 2px  solid white;
+}
+.Dis{
+	margin-top: 150px;
+	display: flex;
+
+}
+.DisText{
+	background-color: white;
+	width: 50%;
+	margin-top: 150px;
+	margin-left: -160px;
+	padding-left: 70px;
+	padding-top: 100px;
+	font-family: 'Alata', sans-serif;
+	text-align: center;
+	align-self: flex-end;
+	}
+.DisText h1{
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3.3rem;
+}
+.DisText p{
+	margin-bottom: 0px;
+	color:hsl(0, 0%, 41%);
+}
+.WorkHeader{
+	display: flex;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.WorkHeader h1{
+	color:black;
+}
+.myButton{
+	color: black;
+	font-family: 'Alata', sans-serif;
+	letter-spacing: 5px;
+	border:2px solid black;
+	transition: background-color 0.25s,color 0.25s;
+	padding: 5px 30px;
+	cursor: pointer;
+
+}
+.WorkHeader p:hover{
+	color:white;
+	background-color: black;
+}
+
+.OurWorks{
+	display: grid;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.Zone{
+	width: 256px;
+	height: 450px;
+	box-shadow: inset 0px 0px 75px black;
+	cursor: pointer;
+	transition: box-shadow 0.5s;
+}
+
+.Zone img{
+	position: relative;
+	z-index: -1;
+	transition: opacity 0.5s;
+}
+.Zone h1{
+	position: relative;
+	font-size:2rem;
+	bottom: 100px;
+	left: 40px;
+	transition: color 0.5s;
+	display: inline;
+
+}
+
+footer{
+	background-color: black;
+	padding: 40px 0px;
+	margin-top: 200px;
+	
+}
+footer div{
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	height: 110px;
+}
+.socialMedia{
+	display: flex;
+	list-style: none;
+
+	margin-bottom: 6px;
+	margin-left: auto;
+}
+.socialMedia li{
+	margin-left:25px; 
+	padding-bottom:10px;
+	transition: border-bottom 0.1s, padding-bottom 0.1s; 
+}
+.socialMedia li:hover{
+	border-bottom: 2px solid white;
+	padding-bottom: 0px;
+	cursor: pointer;
+}
+.footerLinks{
+	font-family: 'Alata', sans-serif;
+	color:white;
+	display: flex;
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.footerLinks li{
+	margin-right:25px;
+	transition: border-bottom 0.1s, padding-bottom 0.1s; 
+}
+.footerLinks li:hover{
+	border-bottom: 2px solid white;
+	padding-bottom: 3px;
+	cursor: pointer;
+}
+
+.copyrights{
+	color:hsl(0, 0%, 41%);
+	margin-top: 20px;
+	margin-left: auto;
+	font-family: 'Alata', sans-serif;
+}
+
+
+
+@media screen and (max-width: 1200px)
+{
+		header{
+		background-position: center;
+	}
+	.OurWorks{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 84px;
+
+	}
+
+	.DisText{
+		width: 70%;
+	margin-top: 160px;
+	margin-left: -300px;
+	padding-left: 70px;
+	padding-top: 100px;
+
+	}
+}
+@media screen and (max-width: 1000px)
+{
+	header{
+		background-position: center;
+	}
+	.OurWorks{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr;
+		/*justify-content: center;*/
+		justify-items: center;
+		grid-gap: 30px 30px ;
+
+		
+	}
+	.Dis{
+		margin-top: 75px;
+		align-content: center;
+		display: block;
+
+
+	}
+	.DisText{
+		width: 100%;
+		margin-top: 75px;
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-top: 0px;
+
+	}
+	.DisImg{
+
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 80%;
+	}
+
+	.Zone h1{
+		position: relative;
+		font-size:2rem;
+		bottom: 100px;
+		left: 40px;
+		
+		transition: color 0.5s;
+
+	}
+
+	.HeaderTitle{
+	    margin-top: 14vw;
+	    width: 58vw;
+	    font-size: 6vw;
+	}
+}
+@media screen and (max-width: 767px)
+{
+
+	.logo{
+		/*margin:  auto;*/
+
+	}
+	.NavLinks{
+		visibility: hidden;
+		width:0px;
+		height: 0px;
+		position: absolute;
+		/*flex-direction: column;*/
+		/*margin:  auto;*/
+	}
+	.hamburger{
+		padding-top: 10px;
+		width: 24px;
+		height: 26px;
+		visibility: visible;
+	}
+	.NavLinks li{
+
+		/*margin: 10px auto;*/
+
+	}
+	.HeaderTitle{
+		width: auto;
+		margin: 150px auto;
+		font-size: 4rem;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		padding-left: 5%;
+		border: 2px  solid white;
+	}
+	.OurWorks{
+		display: grid;
+		grid-template-columns: 1fr;
+		/*justify-content: center;*/
+		/*justify-items: center;*/
+		grid-row-gap: 30px;		
+	}
+	.Zone{
+		width: 400px;
+		height: 240px;
+	}
+	.ZoneImg{
+			width:400px;
+			height: 240px;
+
+	}
+	footer div{
+		flex-wrap: nowrap;
+		height: auto;
+		
+	}
+	.footerLinks{
+
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+	.footerLinks li{
+		margin-right:0px; 
+		align-self: center;
+		margin-bottom: 10px;
+	}
+	.socialMedia{
+		margin:  auto;
+		padding: 0px;
+
+	}
+	.socialMedia li{
+		margin-left: 15px;
+		margin-right: 15px;
+
+	}
+	.logoFooter{
+		margin:  auto;
+	}
+	.copyrights{
+
+		margin: auto;
+		margin-top: 20px;
+	}
+
+}
+@media screen and (max-width: 575.98px)
+{
+
+}
